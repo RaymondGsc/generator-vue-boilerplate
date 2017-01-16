@@ -1,4 +1,4 @@
-# generator-node-rest-api [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
+# generator-vue-boilerplate [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 >  vue boilerplate project template
 
 ## Installation
