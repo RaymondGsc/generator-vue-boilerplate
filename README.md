@@ -33,7 +33,7 @@ A simple template for building a webapp based on vue2.0
 - suppot ES6/ES7 features
 - using ESlint followed [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
-For more information about the project: [Document](generators/app/templates/-vue-boilerplate/README.md)
+For more information about the project: [Document](generators/app/templates/vue-boilerplate/README.md)
 
 ## License
 
