@@ -30,6 +30,12 @@ module.exports = class extends Generator {
       },
       {
         type: 'input',
+        name: 'version',
+        message: 'Project version:',
+        default: '1.0.0'
+      },
+      {
+        type: 'input',
         name: 'description',
         message: 'Project description:',
         default: ''

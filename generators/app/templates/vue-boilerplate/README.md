@@ -69,6 +69,7 @@ VSCode 1.8.1+
 /components   少量的公共组件
 /styles       少量的公共样式或变量
 /views        主要的视图页面
+/utils        应用函数的打包
 App.vue       整个应用的容器
 index.html    渲染平台
 main.js       入口文件
@@ -94,13 +95,9 @@ assets,components,styles,views 已添加到 webpack 别名，除了 less import 
 
 .vue : `import xxxx from 'xxx/xxx.vue'`
 
-.less : 
+.less : `@import "../styles/xxx";`
 
-        在 .vue 文件样式标签中使用 `@import "../styles/xxx";` (相对路径)
-
-.css :（来自于 node_modules 的外部文件）
-
-        在 /main.js 入口文件中使用 `require('xxxx)` 全局加载
+.css :  `require('xxxx)` 在 /main.js全局加载（来自于 node_modules 的外部文件）
 
 其他资源 :
         
