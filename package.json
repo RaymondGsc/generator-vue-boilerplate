@@ -1,6 +1,6 @@
 {
   "name": "generator-vue-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "yeoman generator for creating vue2.0 single-page web-app",
   "author": {
     "name": "Raymond",
