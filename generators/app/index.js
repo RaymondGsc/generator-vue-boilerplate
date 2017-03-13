@@ -71,10 +71,6 @@ module.exports = class extends Generator {
       this.destinationPath(`${this.options.name}/build`)
     );
     this.fs.copyTpl(
-      this.templatePath('vue-boilerplate/dist'),
-      this.destinationPath(`${this.options.name}/dist`)
-    );
-    this.fs.copyTpl(
       this.templatePath('vue-boilerplate/.*'),
       this.destinationPath(`${this.options.name}`)
     );
