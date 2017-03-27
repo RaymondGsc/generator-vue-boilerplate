@@ -42,5 +42,5 @@ For more information about the project: [Document](generators/app/templates/vue-
 
 [npm-image]: https://badge.fury.io/js/generator-vue-boilerplate.svg
 [npm-url]: https://npmjs.org/package/generator-vue-boilerplate
-[travis-image]: https://travis-ci.org/Cody2333/generator-vue-boilerplate.svg?branch=master
-[travis-url]: https://travis-ci.org/Cody2333/generator-vue-boilerplate
+[travis-image]: https://travis-ci.org/RaymondGsc/generator-vue-boilerplate.svg?branch=master
+[travis-url]: https://travis-ci.org/RaymondGsc/generator-vue-boilerplate
