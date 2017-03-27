@@ -94,7 +94,7 @@ routes.js     路由表
 
 ### 文件的引入方式：
 
-`src` 已添加到 webpack 别名，别名为 `@`；除了 less import 以外均可使用别名路径
+`src` 已添加到 webpack 别名，别名为 `@`，可以这样使用：
 
 .js : `import xxx from '@/utils/xxx'`
 
