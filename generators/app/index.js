@@ -55,30 +55,46 @@ module.exports = class extends Generator {
 
   writing() {
     this.fs.copyTpl(
-      this.templatePath('vue-boilerplate/src'),
+      this.templatePath('src'),
       this.destinationPath(`${this.options.name}/src`)
     );
     this.fs.copyTpl(
-      this.templatePath('vue-boilerplate/test'),
+      this.templatePath('test'),
       this.destinationPath(`${this.options.name}/test`)
     );
     this.fs.copyTpl(
-      this.templatePath('vue-boilerplate/config'),
+      this.templatePath('test/unit/.*'),
+      this.destinationPath(`${this.options.name}/test/unit`)
+    );
+    this.fs.copyTpl(
+      this.templatePath('static/.*'),
+      this.destinationPath(`${this.options.name}/static`)
+    );
+    this.fs.copyTpl(
+      this.templatePath('config'),
       this.destinationPath(`${this.options.name}/config`)
     );
     this.fs.copyTpl(
-      this.templatePath('vue-boilerplate/build'),
+      this.templatePath('build'),
       this.destinationPath(`${this.options.name}/build`)
     );
     this.fs.copyTpl(
-      this.templatePath('vue-boilerplate/.*'),
+      this.templatePath('.*'),
       this.destinationPath(`${this.options.name}`)
     );
     this.fs.copyTpl(
-      this.templatePath('vue-boilerplate/README.md'),
+      this.templatePath('index.html'),
+      this.destinationPath(`${this.options.name}/index.html`)
+    );
+    this.fs.copyTpl(
+      this.templatePath('yarn.lock'),
+      this.destinationPath(`${this.options.name}/yarn.lock`)
+    );
+    this.fs.copyTpl(
+      this.templatePath('README.md'),
       this.destinationPath(`${this.options.name}/README.md`)
     );
-    const pkg = this.fs.readJSON(this.templatePath('vue-boilerplate/package.json'), {});
+    const pkg = this.fs.readJSON(this.templatePath('package.json'), {});
     pkg.name = this.options.name;
     pkg.author = this.options.author;
     pkg.description = this.options.description;
