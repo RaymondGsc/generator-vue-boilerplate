@@ -1,0 +1,1 @@
+一些 static 文件可以放在这里，打包时会复制到 /dist/static 下

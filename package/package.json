@@ -1,0 +1,42 @@
+{
+  "name": "generator-vue-boilerplate",
+  "version": "2.0.0",
+  "description": "yeoman generator for creating vue2.0 single-page web-app",
+  "authors": [
+    {
+      "name": "Raymond",
+      "email": "gushuangchi@gmail.com"
+    },
+    {
+      "name": "hugojing",
+      "email": "toloric@163.com"
+    }
+  ],
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^1.0.0",
+    "chalk": "^1.1.3",
+    "yosay": "^1.2.1"
+  },
+  "devDependencies": {
+    "yeoman-test": "^1.6.0",
+    "yeoman-assert": "^2.2.1",
+    "eslint": "^3.1.1",
+    "eslint-config-xo-space": "^0.15.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "RaymondGsc/generator-vue-boilerplate",
+  "scripts": {}
+}
+

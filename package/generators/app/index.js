@@ -94,21 +94,6 @@ module.exports = class extends Generator {
       this.templatePath('README.md'),
       this.destinationPath(`${this.options.name}/README.md`)
     );
-    this.fs.delete(
-      this.destinationPath('.npmignore')
-    );
-    this.fs.write(
-      this.destinationPath('.gitignore'),
-`
-.DS_Store
-node_modules/
-dist/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-test/unit/coverage
-`
-    );
     const pkg = this.fs.readJSON(this.templatePath('package.json'), {});
     pkg.name = this.options.name;
     pkg.author = this.options.author;
